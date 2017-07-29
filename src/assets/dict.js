@@ -44,6 +44,7 @@
             e.preventDefault();
             var a = $( this );
             var mp3 = a.attr( 'data-audio-url' );
+            mp3 = mp3.replace( /http/, "https" ); //使用https防止SSL页面无法播放
 
             // 调用Howl组件发音
             if( mp3 ){

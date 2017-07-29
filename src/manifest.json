@@ -41,7 +41,7 @@
         "contextMenus",
         "tabs",
         "cookies",
-        "http://*.iciba.com/*",
+        "*://*.iciba.com/*",
         "webRequest",
         "storage"
     ],

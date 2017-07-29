@@ -48,7 +48,7 @@ var ICIBA = {
     search: function( word, next ){
 
         // 获取当前查询词
-        var URL = 'http://open.iciba.com/huaci/dict.php?word=' + encodeURIComponent(word);
+        var URL = 'https://open.iciba.com/huaci/dict.php?word=' + encodeURIComponent(word);
 
         // 将结果作为字符串返回
         $.get( URL, function( data ){
@@ -74,7 +74,7 @@ var ICIBA = {
      */
     addToMyNote: function( word, next ){
 
-        $.get( 'http://scb.iciba.com/aiframe.php?word=' + word + '&t=' + Date.now(), function( res ){
+        $.get( 'https://scb.iciba.com/aiframe.php?word=' + word + '&t=' + Date.now(), function( res ){
 
             var result = -1;
 
